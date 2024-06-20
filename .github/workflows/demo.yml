@@ -24,6 +24,6 @@ jobs:
 
       - name: Run script with token
         env:
-          WEATHER_TOKEN_KEY: ${{secret.WEATHER_TOKEN_KEY}}
+          WEATHER_TOKEN_KEY: ${{secrets.WEATHER_TOKEN_KEY}}
         run: |
           python main.py
